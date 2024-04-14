@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: #1f1e1f;
+}
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+
+.logo{
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.logo img {
+    width: 20%;
+    height: 20%;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+  
+    
+    
+}
+
+.content .list-menu li a {
+    padding:3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover{
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color:#ffc506
+}
+
+
+.first-section{
+   height: 100vh;
+   background-image:linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)   ) ,url(./img/pizza\ e\ vinho.png);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-y: 50px;
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+
+
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.first-section h1 {
+    color:#ffc506;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+.first-section h3 {
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+
+.btn button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 15px;
+    color: black;
+    font-weight: 700;
+    margin-top: 4rem;
+    transition: all 400ms ease-in;
+
+}
+
+.btn button:hover{
+    border: 1px solid #ffc506;
+    background-color: transparent;
+    color:#ffc506;
+
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* sobre nós */
+
+.sobre-nos{
+   background-color: #1f1e1f;
+   width: 100%;
+   padding-bottom: 5rem;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 3px solid rgb(155, 155, 155);
+    
+   
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.contetsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contetsobre h2 {
+    margin-bottom: 10px;
+    color: #ffc506;
+    font-size: 3.5rem;
+}
+.contetsobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 500px;
+    margin-top: 25px;
+}
+
+/* cardapio */
+
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.8);
+
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    color:#ffc506;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
+}
+
+.itens-cardapio {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+     justify-content: center;
+     align-items: center;
+     gap: 20px
+} 
+
+.itens-cardapio .info {
+    background-color: #5e5252;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+   
+}
+.itens-cardapio .info h3 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio .info h4{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 10rem;
+
+}
+
+.itens-cardapio .info h4 span {
+        font-size: 1.6rem;
+        color: #cbbdbd;
+        margin-left: 1.5rem;
+        text-decoration: underline;
+}
+
+
+.itens-cardapio img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.itens-cardapio div {
+    border: 2px solid black;
+   
+
+}
+
+
+.pedir {
+    width: 250px;
+    height: 38px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    margin-top: 3rem;
+    transition: all 400ms ease-in;
+    font-weight: 700;
+    font-size: 2rem;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+.pedir:hover {
+    border: 2px solid black;
+    background-color: transparent;
+    color:#ffc506;
+}
+
+
+/* footer */
+
+
+.contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: #5e5252;
+    padding-bottom: 4rem;
+    color:white
+
+   
+}
+
+.contato h3 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    transition: all 400ms ease-in;
+}
+
+
+.contato h3:hover {
+   
+   
+    color:#ffc506;
+
+}
+
+.contatos-secao{
+    width: 800px;
+    display: flex;
+    justify-content:space-between;
+    font-size: 3rem;
+   
+}
+
+.contatos-secao  i  {
+    margin-right: 1rem;
+    color: #ffc506;
+}
+
+.contatos-secao div {
+   cursor: pointer;
+}
+
+.contatos-secao span {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+   
+}
+
+#fechar > i {
+    display: none;
+}
+
+@media (max-width:1102px) {
+    .main {
+        display:block ;
+    }
+
+
+    .content {
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         height: 12%;
+        
+       
+    }
+
+    .sobre-nos img {
+        width: 250px;
+        margin-right: 60px;
+         
+    }  
+
+}
+
+
+
+@media (max-width:990px){
+    html {
+        font-size: 50%;
+        
+    }
+
+
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+    }
+
+    .contatos-secao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 380px;
+        
+    }
+
+    
+}
+
+
+@media (max-width: 768px){
+   html {
+      font-size: 45%;
+   }
+
+   .content {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 0px 40px;
+   }
+
+
+   .content .list-menu {
+    display: none;
+   }
+
+
+
+   .one,
+   .tow,
+   .three {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 6px auto;
+    transition-duration: 0.5s;
+    z-index: 999999;
+   }
+
+
+
+   .menu-toggle{
+     width: 30px;
+     height: 30px;
+     
+   }
+
+
+
+   .on {
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 31, 30, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s ease-in-out;
+   }
+
+#fechar > i {
+    font-size: 40px;
+    color: white;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 561px;
+ }
+
+
+   .logo{
+    display: none;
+   }
+
+
+
+    .menu-toggle {
+    position: absolute;
+    top: 35px;
+    right: 72px;
+    z-index: 99999;
+  
+   
+   }
+
+
+.on .list-menu {
+    display: block;
+
+   }
+
+
+
+   .list-menu li {
+    display: flex;
+    justify-content: center;
+     margin-left: 295px;
+    
+
+   }
+
+
+
+    .list-menu li a {
+    font-size: 3rem;
+  
+   }
+
+
+   .on.content.on .menu-toggle .tow {
+    opacity: 0;
+}
+
+   .cardapio {
+       grid-template-columns: repeat(1, minmax (50px, 200px));
+
+   }
+
+
+   .itens-cardapio .info h4 {
+              margin-left: 10rem;
+
+   }
+  
+}
+
+
+@media (max-width: 643px) {
+    .first-section  h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+    }
+    
+    
+    
+}
+
+
+@media (max-width: 502px) {
+    .conteudo-principal h3 {
+        width: 200px;
+    }
+    
+    
+    
+    .btn  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .main p {
+        width: 350px;
+    }
+    
+}
+
+
