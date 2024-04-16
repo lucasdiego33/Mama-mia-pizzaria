@@ -302,6 +302,7 @@ html {
 
 .contato {
     width: 100%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,9 +315,11 @@ html {
 }
 
 .contato h3 {
-    font-size: 6rem;
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
     transition: all 400ms ease-in;
+   
 }
 
 
@@ -328,10 +331,9 @@ html {
 }
 
 .contatos-secao{
-    width: 800px;
-    display: flex;
-    justify-content:space-between;
-    font-size: 3rem;
+  
+    text-align: center;
+    font-size: 2rem;
    
 }
 
@@ -347,6 +349,7 @@ html {
 .contatos-secao span {
     cursor: pointer;
     transition: all 200ms ease-in;
+  
    
 }
 
